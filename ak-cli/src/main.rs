@@ -181,6 +181,7 @@ async fn main() -> std::result::Result<(), Error> {
             }
             match command {
                 AuthCommands::Raw { client_id } => commands::auth::raw(app, client_id).await,
+                AuthCommands::Gcp { client_id } => commands::auth::gcp(app, client_id).await,
                 AuthCommands::Kubectl { client_id } => {
                     commands::auth::kubectl(app, client_id).await
                 }

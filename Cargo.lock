@@ -162,6 +162,7 @@ dependencies = [
  "clap_complete",
  "color-eyre",
  "eyre",
+ "jsonwebtoken",
  "open",
  "pbjson-types",
  "psl",
